@@ -1,9 +1,12 @@
-import React from 'react';
-import cl from './MyQuestion.module.css'
-import gifImg from '../../assets/images/cat.gif'
-import MyButton from '../button/MyButton';
+import React, { useRef, useState } from 'react';
+import gifImg from '../../assets/images/cat.gif';
+import NoButton from '../button/NoButton';
+import YesButton from '../button/YesButton';
+import cl from './MyQuestion.module.css';
+
 
 const MyQuestion = ({question}) => {
+
     return (
         <div>
             <div className={cl.container}>
@@ -36,8 +39,7 @@ const MyQuestion = ({question}) => {
                             <img className={cl.gif} src={gifImg} alt="" />
                         </div>
                         <div className={cl.question__btns}>
-                            <MyButton  text='Да' />
-                            <MyButton  text='Нет' />
+                            <YesButton  text='Да' />
                         </div>
                     </div>
                  </div>

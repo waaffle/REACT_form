@@ -1,9 +1,9 @@
-import React from 'react';
-import cl from './MyButton.module.css'
+import React, { forwardRef } from 'react';
+import cl from './NoButton.module.css';
 
-const MyButton = ({text}) => {
+const NoButton = ({ text }) => {
     return (
-        <div className={cl.button_box}>
+        <div className={cl.red_box}>
             <a href={'#'}>
                 <span></span>
                 <span></span>
@@ -15,4 +15,4 @@ const MyButton = ({text}) => {
     );
 };
 
-export default MyButton;
+export default NoButton;

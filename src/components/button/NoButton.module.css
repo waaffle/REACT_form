@@ -1,0 +1,153 @@
+.red_box{
+    position: static;
+    display: inline-block;
+    
+  }
+    .red_box a:hover {
+      top: 0;
+      left: 0;
+      background: #f40337;
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #f40337,
+                  0 0 25px #f40337,
+                  0 0 50px #f40337;
+    }
+  
+  
+  .red_box a span{
+      position: absolute;
+  }
+  
+  .red_box a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #f40337;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+  }
+  
+    .red_box a span:nth-child(1) {
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #f40337);
+      animation: btn-anim1 1s linear infinite;
+    }
+    
+    @keyframes btn-anim1 {
+      0% {
+        left: -100%;
+      }
+      50%,100% {
+        left: 100%;
+      }
+    }
+
+  
+    .red_box a span:nth-child(2) {
+      top: -100%;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, #f40337);
+      animation: btn-anim2 1s linear infinite;
+      animation-delay: .25s
+    }
+    
+    @keyframes btn-anim2 {
+      0% {
+        top: -100%;
+      }
+      50%,100% {
+        top: 100%;
+      }
+    }
+
+  
+    .red_box a span:nth-child(3) {
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg, transparent, #f40337);
+      animation: btn-anim3 1s linear infinite;
+      animation-delay: .5s
+    }
+    
+    @keyframes btn-anim3 {
+      0% {
+        right: -100%;
+      }
+      50%,100% {
+        right: 100%;
+      }
+    }
+  
+    .red_box a span:nth-child(4) {
+      bottom: -100%;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(360deg, transparent, #f40337);
+      animation: btn-anim4 1s linear infinite;
+      animation-delay: .75s
+    }
+    
+    @keyframes btn-anim4 {
+      0% {
+        bottom: -100%;
+      }
+      50%,100% {
+        bottom: 100%;
+      }
+    }
+  
+    .jump_btn{
+      animation: bounce 2s ease-in-out;
+    }
+  
+    @keyframes bounce {
+      0% {
+          top: 30px;
+          left: 30px;
+      }
+  
+      25% {
+        bottom: 50px;
+      }
+  
+      40% {
+        display: none;
+        right: 100px;
+        top: 40px;
+      }
+  
+      60% {
+        display: block;
+        left: 10px;
+        top: 10px;
+      }
+  
+      80% {
+        display: none;
+        bottom: 15px;
+        left: 15px;
+      }
+  
+      100% {
+        display: block;
+        bottom: 40px;
+        right: 70px;
+      }
+  
+    }
+  
+    
+  
