@@ -1,8 +1,9 @@
 import React from 'react';
-import cl from './MyForm.module.css'
+import cl from './MyQuestion.module.css'
 import gifImg from '../../assets/images/cat.gif'
+import MyButton from '../button/MyButton';
 
-const MyForm = () => {
+const MyQuestion = ({question}) => {
     return (
         <div>
             <div className={cl.container}>
@@ -29,16 +30,21 @@ const MyForm = () => {
                     </div>
                 </div>
                 <div className={cl.question__box}>
-                    <h1>Пойдём гулять?</h1>
-                    <img className={cl.gif} src={gifImg} alt="" />
-                    <div className={cl.question__btns}>
-                        <button>Да</button>
-                        <button>Нет</button>
+                    <div className={cl.question__box__inner}>
+                        <h1>{question}</h1>
+                        <div className={cl.gif_container}>
+                            <img className={cl.gif} src={gifImg} alt="" />
+                        </div>
+                        <div className={cl.question__btns}>
+                            <MyButton  text='Да' />
+                            <MyButton  text='Нет' />
+                        </div>
                     </div>
-                </div>
+                 </div>
+                
             </div>
         </div>
     );
 };
 
-export default MyForm;
+export default MyQuestion;
