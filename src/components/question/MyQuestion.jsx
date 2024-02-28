@@ -1,5 +1,5 @@
-import React, { useRef, useState } from 'react';
-import gifImg from '../../assets/images/cat.gif';
+import React from 'react';
+import gifImg from '../../assets/images/cat1.gif';
 import NoButton from '../button/NoButton';
 import YesButton from '../button/YesButton';
 import cl from './MyQuestion.module.css';

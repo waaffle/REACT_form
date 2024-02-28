@@ -4,8 +4,57 @@
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background: #000;
+  background: #06000c;
   overflow: hidden;
+}
+
+.animation2{
+  position: absolute;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #000000;
+  overflow: hidden;
+}
+
+.bg {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, rgb(7, 25, 80) 0%, rgb(7, 25, 80) 10%, rgb(7, 25, 80) 30%, #ff0099 100%);
+  -webkit-animation: AnimateBG 10s ease infinite;
+          animation: AnimateBG 10s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .glowing {
@@ -144,17 +193,44 @@
   color: #fff;
 }
 
+.yes__box__inner{
+  position: relative;
+  left: -50%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  color: #fff;
+}
+
 .gif_container{
   position: relative;
   width: 200px;
   height: 200px;
 }
 
+.gif_container2{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  left: -10%;
+}
+
 .gif{
     position: absolute;
     width: 200px;
     height: 200px;  
-    left: -15%
+    left: -15%;
+}
+
+.gif2{
+  position: absolute;
+  width: 300px;
+  height: 300px;  
 }
 
 .question__btns{
@@ -167,6 +243,14 @@
 }
 
 .question__box__inner h1{
+  width: 400px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.yes__box__inner h1{
   width: 400px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
