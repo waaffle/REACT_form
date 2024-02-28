@@ -1,6 +1,7 @@
 .button_box{
-    position: static;
-    display: inline-block;
+    position: absolute;
+    top: 70%;
+    left: 30%;
     
   }
   .button_box a:hover {

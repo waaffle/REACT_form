@@ -38,11 +38,10 @@ const MyQuestion = ({question}) => {
                         <div className={cl.gif_container}>
                             <img className={cl.gif} src={gifImg} alt="" />
                         </div>
-                        <div className={cl.question__btns}>
-                            <YesButton  text='Да' />
-                        </div>
                     </div>
                  </div>
+                 <YesButton  text='Да' />
+                <NoButton  text='Нет' />
                 
             </div>
         </div>
